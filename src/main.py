@@ -31,7 +31,7 @@ def is_yesterday(date_str: str) -> bool:
 
 def qiita_items():
     # ニュースを取得する
-    query = urllib.parse.quote_plus('大規模言語モデル OR LLM')
+    query = urllib.parse.quote_plus('LLM')
     url = f"https://qiita.com/api/v2/items?query={query}&per_page=100"
 
     headers = {"Authorization": f"Bearer {QIITA_TOKEN}"} if QIITA_TOKEN else {}
